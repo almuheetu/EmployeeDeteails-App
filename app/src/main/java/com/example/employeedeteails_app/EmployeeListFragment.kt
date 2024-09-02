@@ -15,7 +15,6 @@ class EmployeeListFragment : Fragment(), EmployeeAdapter.OnItemClickListener {
     private lateinit var employeeAdapter: EmployeeAdapter
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,10 +34,11 @@ class EmployeeListFragment : Fragment(), EmployeeAdapter.OnItemClickListener {
     }
 
     override fun onItemClick(employee: Employee) {
-        val action = EmployeeListFragmentDirections.actionEmployeeListFragment3ToEmployeeDetailsFragment(employee)
+        val action =
+            EmployeeListFragmentDirections.actionEmployeeListFragment3ToEmployeeDetailsFragment(
+                employee
+            )
         findNavController().navigate(action)
-
-
     }
 
 

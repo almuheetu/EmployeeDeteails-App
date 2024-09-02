@@ -32,6 +32,9 @@ class EmployeeDetailsFragment : Fragment() {
         binding.tvEmployeeEmail.text = employee.email
         binding.tvEmployeeSalary.text = employee.salary
         binding.tvEmployeeAddress.text = employee.address
+        binding.backBtn.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
 
 
     }

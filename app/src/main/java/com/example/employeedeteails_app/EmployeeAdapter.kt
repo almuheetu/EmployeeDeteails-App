@@ -36,7 +36,6 @@ class EmployeeAdapter(
         }
 
 
-
     }
 
     override fun getItemCount(): Int {

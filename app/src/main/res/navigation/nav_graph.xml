@@ -23,5 +23,8 @@
         <argument
             android:name="data"
             app:argType="com.example.employeedeteails_app.Employee" />
+        <action
+            android:id="@+id/action_employeeDetailsFragment_to_employeeListFragment3"
+            app:destination="@id/employeeListFragment3" />
     </fragment>
 </navigation>
