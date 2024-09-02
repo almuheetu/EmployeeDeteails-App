@@ -9,7 +9,7 @@ import java.util.ArrayList
 
 class EmployeeAdapter(
     private val employeeList: ArrayList<Employee>,
-    private val listener: OnItemClickListener
+    private val listener: OnItemClickListener,
 
 
     ) : RecyclerView.Adapter<EmployeeAdapter.ViewHolder>() {
@@ -32,7 +32,7 @@ class EmployeeAdapter(
         viewHolder.binding.tvNameId.text = employee.name
         viewHolder.binding.tvTitleId.text = employee.title
         viewHolder.itemView.setOnClickListener {
-            listener.onItemClick(position)
+            listener.onItemClick(employee)
         }
 
 
@@ -44,6 +44,6 @@ class EmployeeAdapter(
     }
 
     interface OnItemClickListener {
-        fun onItemClick(position: Int)
+        fun onItemClick(employee: Employee)
     }
 }

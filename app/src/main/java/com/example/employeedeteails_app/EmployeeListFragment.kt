@@ -34,10 +34,10 @@ class EmployeeListFragment : Fragment(), EmployeeAdapter.OnItemClickListener {
 
     }
 
-    override fun onItemClick(position: Int) {
-        val employee = employeeList[position]
+    override fun onItemClick(employee: Employee) {
         val action = EmployeeListFragmentDirections.actionEmployeeListFragment3ToEmployeeDetailsFragment(employee)
         findNavController().navigate(action)
+
 
     }
 
