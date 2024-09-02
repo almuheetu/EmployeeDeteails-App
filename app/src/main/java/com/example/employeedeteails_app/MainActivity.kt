@@ -14,5 +14,14 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
+//        if (savedInstanceState == null) {
+//            val fragment = EmployeeListFragment()
+//            supportFragmentManager.beginTransaction()
+//                .add(R.id.fragment_container, fragment)
+//                .commit()
+//        }
     }
 }

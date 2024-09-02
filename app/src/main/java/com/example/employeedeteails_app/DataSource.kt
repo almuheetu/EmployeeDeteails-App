@@ -2,7 +2,7 @@ package com.example.employeedeteails_app
 
 import kotlin.math.E
 
-val employees = listOf(
+val employeeList = arrayListOf(
     Employee(
         image = R.drawable.employee_profile_image,
         name = "John Doe",
